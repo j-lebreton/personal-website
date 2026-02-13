@@ -20,5 +20,8 @@
     "copysvg": "copy *.svg dist",
     "copysvgpdf": "robocopy ./ ./dist *.svg *.pdf /njh /njs",
     "buildfull": "npm run clean && npm run build && npm run copysvgpdf"
+  },
+  "devDependencies": {
+    "html-minifier-next": "^5.1.0"
   }
 }
