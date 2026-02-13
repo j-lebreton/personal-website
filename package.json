@@ -15,10 +15,10 @@
   "author": "Jamison LeBreton",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "Start-Process firefox index.html",
     "build": "html-minifier-next --config-file=html-minifier-next.json --input-dir=. --output-dir=dist",
     "clean": "IF EXIST dist rmdir /s /q dist",
-    "cleanBuild": "npm run clean && npm run build"
+    "copysvg": "copy *.svg dist",
+    "copysvgpdf": "robocopy ./ ./dist *.svg *.pdf /njh /njs",
+    "buildfull": "npm run clean && npm run build && npm run copysvgpdf"
   }
 }

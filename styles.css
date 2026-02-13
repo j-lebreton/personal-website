@@ -9,8 +9,91 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #e6e6e6;
+    background-color: #000000;
+  }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 0.5rem 2rem;
+  border-bottom-right-radius: 20%;
+  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    #253f59 0%,
+    #234263 16.667%,
+    #21476e 33.333%,
+    #214d7a 50%,
+    #215485 66.667%,
+    #215b91 83.333%,
+    #23649c 100%
+  );
+}
+
+header h1 {
+  padding: 0 0 0.5rem 0;
+  margin: 0;
+}
+
+header h4 {
+  padding: 0 0 0.5rem 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+header nav {
+  user-select: none;
 }
 
 nav ul {
   list-style: none;
+  margin: 0 0 0 -0.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+nav ul li {
+  display: inline-block;
+  color: #bfbfbf;
+  border-radius: 4px;
+}
+
+nav ul li:hover,
+nav ul li:focus {
+  color: #ffffff;
+}
+
+nav ul li:active {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+}
+
+nav ul li a:focus-visible {
+  outline-color: rgba(255, 255, 255, 0.85);
+  outline-style: solid;
+  outline-width: 0.125rem;
+}
+
+main {
+  padding: 1rem;
 }
