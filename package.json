@@ -1,0 +1,24 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "This is the repository for Jamison LeBreton's personal website.",
+  "homepage": "https://github.com/j-lebreton/personal-website#readme",
+  "bugs": {
+    "url": "https://github.com/j-lebreton/personal-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-lebreton/personal-website.git"
+  },
+  "license": "UNLICENSED",
+  "author": "Jamison LeBreton",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "Start-Process firefox index.html",
+    "build": "html-minifier-next --config-file=html-minifier-next.json --input-dir=. --output-dir=dist",
+    "clean": "IF EXIST dist rmdir /s /q dist",
+    "cleanBuild": "npm run clean && npm run build"
+  }
+}

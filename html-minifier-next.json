@@ -1,0 +1,22 @@
+{
+  "fileExt": "html,css",
+  "collapseAttributeWhitespace": true,
+  "collapseBooleanAttributes": false,
+  "collapseWhitespace": true,
+  "continueOnParseError": false,
+  "decodeEntities": false,
+  "mergeScripts": false,
+  "minifyCSS": true,
+  "minifyJS": true,
+  "minifySVG": false,
+  "minifyURLs": false,
+  "processConditionalComments": true,
+  "removeAttributeQuotes": false,
+  "removeComments": true,
+  "removeEmptyAttributes": false,
+  "removeOptionalTags": false,
+  "removeRedundantAttributes": false,
+  "removeScriptTypeAttributes": false,
+  "removeStyleLinkTypeAttributes": false,
+  "useShortDoctype": false
+}
